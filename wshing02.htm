@@ -1,0 +1,17 @@
+<html>
+<head><title>my page</title></head>
+<body>
+<script type="text/javascript">
+var ourdate=new Date;
+var hours=ourdate.getHours();
+var min=ourdate.getMinutes();
+var day=ourdate.getDay();
+var days=["sunday","monday","tuesday","wednesday","thurusday","friday","saturday"];
+var myday=days[day];
+z=(hours<12)?"good morning":((hours<15)?"good eveing":"good afternoon");
+y=(hours<12)?"AM":"PM";
+document.write("TIME IS   ",+hours+":",+min+y+"</br>"+z);
+document.write("</br>DAY IS  ",days[day]);
+</script>
+</body>
+</html>
